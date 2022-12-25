@@ -1,0 +1,531 @@
+* {
+    box-sizing: border-box;
+
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif !important;
+}
+
+/* top header text */
+header span {
+    color: whitesmoke;
+    padding-left: 5px;
+}
+
+/* Header Section Starts */
+.top-header {
+    background-color: #f36e1e;
+}
+
+/* Home_image text*/
+.p-5 p {
+    font-family: yellowtail, cursive;
+    font-size: 16px;
+    color: #b4f146
+}
+
+h1 {
+    /* font-family: Playfair Display; */
+    font-family: yellowtail;
+    font-weight: 700;
+    font-size: 62px;
+
+
+}
+
+h5 {
+    font-family: yellowtail
+}
+
+/* button */
+/* Home Page Sign In Button in main navagation, all buttons in main tags */
+nav .btn,
+main .btn,
+table~.btn {
+    background-color: #f36e1e;
+    border-radius: 10rem;
+    color: aliceblue;
+}
+
+
+
+.rounded-pill:hover {
+    background-color: #FF8C00;
+    color: white;
+    border-color: #FF8C00;
+}
+
+footer .d-flex button {
+    background-color: black;
+    color: white;
+}
+
+
+
+/* button Ends */
+
+
+
+/* search Bar */
+header .d-flex input {
+    width: 100%;
+    border-bottom-left-radius: 25px;
+    border-top-left-radius: 25px;
+}
+
+/* search icon made rounded in Search bar section */
+header .d-flex button {
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+}
+
+/* Navigation */
+.nav-item a:hover {
+    background-color: #FF8C00;
+    color: white !important;
+}
+
+.nav-item a {
+    color: black;
+}
+
+.dropdown-item:hover {
+    background-color: #FF8C00;
+    color: white;
+}
+
+
+
+
+.checked {
+    color: orange;
+}
+
+
+.card img {
+    width: 60px;
+    height: 60px;
+}
+
+footer p {
+    color: gray;
+    font-size: 10px;
+}
+
+footer b {
+    font-size: 12px;
+}
+
+
+
+
+
+
+/* Thank you Page i.e ThankYou.html*/
+header p {
+    background-color: #f36e1e;
+    color: white;
+    margin: 0 15%;
+    padding: 5px;
+
+
+}
+
+header h1 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 700 !important;
+    font-size: 42px !important;
+    line-height: 0.8 !important;
+
+}
+
+header~h5 {
+    font-weight: 700 !important;
+}
+
+/* return Orders page */
+li {
+    list-style-type: none;
+
+}
+
+li a {
+    color: rgba(0, 0, 0, 0.778);
+    text-decoration: none;
+}
+
+ul h4 {
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.container .breadcrumb {
+    background-color: #e4e4e4;
+    padding: 5px;
+}
+
+ul h4~li:hover {
+    background-color: #eaeaea;
+
+}
+
+td span {
+    color: #03b821 !important;
+    font-weight: 700;
+
+}
+
+/* seller Page */
+form h4,
+.call-us {
+    background-color: #382424;
+    padding: 5px;
+    text-align: center;
+    font-size: 16px;
+}
+
+
+
+/* The sticky class is added to the navbar with JS when it reaches its scroll position */
+.sticky {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+    background-color: #eaeaea;
+    transition: 0.6s;
+
+}
+
+.noLogo {
+    display: none;
+}
+
+/* #topBtn {
+
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    color: white;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 4px;
+} */
+
+#topBtn {
+    display: none;
+    z-index: 9999;
+    padding: 8px 25px;
+}
+
+h5~p {
+    font-size: 12px;
+}
+
+.bar {
+    width: 100%;
+    max-width: 11rem;
+    height: 1.4rem;
+    background-color: rgba(240, 240, 240, 255);
+    overflow: hidden;
+    border: 2px solid #d1d1d1;
+
+
+
+}
+
+.bar .bar-filled {
+
+    height: 100%;
+    background-color: #ffb800;
+    /* border: 1px solid #de7921; */
+    margin: 0;
+}
+
+
+/* Product sale page */
+
+.green {
+    color: #03b821;
+    font-weight: bold;
+}
+
+#wrapper {
+    width: 100%;
+    max-width: 2240px;
+
+    position: relative;
+}
+
+#carousel {
+    overflow: auto;
+    scroll-behavior: smooth;
+    scrollbar-width: none;
+}
+
+#carousel::-webkit-scrollbar {
+    height: 0;
+}
+
+#prev,
+#next {
+    /* display: flex; */
+    justify-content: center;
+    align-content: center;
+    background: white;
+    border: none;
+    padding: 8px;
+    border-radius: 50%;
+    outline: 0;
+    cursor: pointer;
+    position: absolute;
+}
+
+#prev {
+    top: 50%;
+    left: 0;
+    transform: translate(50%, -50%);
+    display: none;
+}
+
+#next {
+    top: 50%;
+    right: 0;
+    transform: translate(-50%, -50%);
+}
+
+#content {
+    max-width: 2730px;
+    margin: auto;
+    box-sizing: border-box;
+}
+
+.item {
+    margin: 10px;
+}
+
+
+
+
+/* Mobile Device */
+@media screen and (max-width: 720px) {
+    .col-sm-2 {
+        display: none !important
+    }
+
+    .nav {
+        display: flex;
+        flex-direction: column;
+    }
+
+
+    .productDescribtion {
+        display: none;
+    }
+
+    .cartBody,.myCart .text-end, .cartBody div{
+        text-align: start !important;
+        margin: 0% !important;
+        padding: 0%;
+        
+        
+    }
+
+}
+
+/* Tablets */
+@media screen and (max-width: 990px) {
+    .text-center .top-50 {
+        top: 20% !important
+    }
+
+    h1 {
+        font-size: 28px;
+
+
+    }
+
+
+
+    .btn {
+        font-size: 12px;
+    }
+
+    .dropdown-item:hover {
+        background-color: #FF8C00;
+        color: white;
+    }
+
+
+
+    .cartBody,.myCart .text-end, .cartBody div{
+        text-align: start !important;
+       
+        
+        
+    }
+
+
+    .summary{
+        margin-top: 15px;
+        margin-left: 0px !important;
+    }
+}
+
+/* modal page of Sign in and Create Account */
+/* twitter */
+.btn-info {
+    background-color: #00acee !important;
+    color: whitesmoke;
+}
+
+/* facebook */
+.btn-primary {
+    background-color: #4267B2 !important;
+}
+
+/* Login and Create Account Buttons */
+.Sign {
+    background-color: #f36e1e !important;
+    color: white;
+    font-size: 16px;
+}
+
+label span,
+del~span {
+    color: red;
+    font-weight: bold;
+}
+
+
+
+/* Frequently Asked Questions */
+
+.accordion {
+    background-color: white;
+    /* color: #444; */
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    border-bottom: 0px #f5dfdf solid;
+    border-top: 1px #e8dcdc solid;
+    border-left: none;
+    border-right: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    transition: 0.4s;
+    font-weight: bold;
+  }
+
+  /* .active,
+  .accordion:hover {
+    background-color: #ccc;
+  } */
+
+  .accordion:after {
+    content: '\002B';
+    /* color: #777; */
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+  }
+
+  .faq .active:after {
+    content: "\2212";
+  }
+
+  .panel{
+    padding: 0 18px;
+    background-color: white;
+    display: none;
+    transition: 0.2s ease-out;
+  }
+
+
+
+
+/* PRODUCTS LIST */
+  .Blur1 {
+    opacity: 0.2;
+
+  }
+
+  .card {
+    position: relative;
+    /* z-index: 1; */
+  }
+
+  .card .newProduct{
+    position: absolute;
+    top: 30%;
+    left: 15%;
+    
+    opacity: 1;
+    /* display: none; */
+  }
+
+  .hide {
+    display: none;
+  }
+
+  .show {
+    visibility: visible;
+  }
+
+  .bor1{
+    border: 1px solid gray ;
+    padding: 25px;
+    margin: 10px 15px;
+    /* width: 70%; */
+  }
+
+  .bgColor{ 
+    background-color: #f36e1e;
+    color: white;
+  }
+
+  .COLOR{
+    color: #f36e1e;
+    font-weight: bold;
+  }
+
+
+  .order{
+    position: relative;
+  }
+  .order:hover .orderList{
+    display: block;
+    padding: 15px 10px;
+    
+  }
+
+  
+ 
+  .order .orderList a:hover{
+   background-color: #f36e1e;
+   display: block;
+    
+  }
+
+  .orderList{
+    display: none;
+    position: absolute;
+    min-width: 140px;
+    left: 10px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    background-color: #f1f1f1;
+    z-index: 1;
+    
+  }
+
+
+  

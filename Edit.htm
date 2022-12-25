@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit Profile</title>
+    <!-- font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    <!-- google font -->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Pinyon+Script&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Pinyon+Script&family=Playfair+Display&display=swap');
+    </style>
+
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles\app.css">
+
+
+    <!-- Jquery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.js"
+        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+
+
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+        crossorigin="anonymous"></script>
+    <script src="Scripts\Jqry.js" defer></script>
+    <script src="Scripts\app.js" defer></script>
+
+
+
+</head>
+
+<body>
+    <!-- When the user scrolls down from the top of the document, show the button at bottom -->
+    <button type="button" class="btn btn-primary position-fixed bottom-0 end-0" id="topBtn"
+        title="Go to top">Top</button>
+
+    <!-- Header Section Starts -->
+    <header class="top-header">
+        <nav class="navbar">
+            <div class="container">
+                <div class="col-sm-2">
+                    <img src="img\fb.png" alt="" height="30">
+                    <img src="img\yt.png" alt="" height="30">
+                    <img src="img\twt.png" alt="" height="30">
+                </div>
+                <form class="d-flex col-sm-4" role="searchbar">
+                    <input type="search" placeholder="    search..." class="border-0">
+                    <button class="border-0 bg-white"> <img src="img\m-glass.png" alt="search" width="30px"></button>
+                </form>
+
+
+                <div class="">
+                    <div id="">
+                        <img src="img\call.png" alt="">
+                        <span id="num">8888888888</span>
+                        <span>Sell On Company</span>
+                        <span>Download App</span>
+                        <img id="img1" src="img\INDIA.png" alt="" width="21" height="21">
+                        <select name="" id="country" aria-label="Choose country.">
+                            <option value="+888888888888">INDIA</option>
+                            <option value="+111111111111">USA</option>
+                            <option value="+222222222222">UK</option>
+                            <option value="+333333333333">FRANCE</option>
+                        </select>
+                    </div>
+
+
+                </div>
+            </div>
+        </nav>
+
+
+
+
+    </header>
+    <!-- Header Section Ends -->
+
+
+    <div class="container">
+
+
+
+        <!-- Main Naviagtion -->
+        <!-- humberger menu is created for mobile -->
+        <nav class="navbar navbar-expand-lg navbar-expand-md navbar-light" id="nav" aria-label="Main Navigation">
+            <div class="container">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+
+                    <!-- Logo -->
+                    <div class="col-lg-2 py-4"> <a href="index.htm"><img src="img\logo.png" alt="logo" width="100px"
+                                role="img" id="logo"></a>
+                    </div>
+                   <ul class="navbar-nav me-auto mb-2 mb-lg-0" role="Main-menu">
+                        <li class="nav-item" role="menuitem">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+
+                        <!-- dropdown menu of Category -->
+                        <li class="nav-item dropdown" role="menuitem">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Catogaries
+                            </a>
+                            <ul role='submenu' class="dropdown-menu " aria-labelledby="navbarDarkDropdownMenuLink">
+                                <li><a class="dropdown-item" href="#" role="menuitem">Menu one</a></li>
+                                <li><a class="dropdown-item" href="#" role="menuitem">Menu Two</a></li>
+                                <li><a class="dropdown-item" href="#" role="menuitem">Menu Three</a></li>
+                                <li><a class="dropdown-item" href="#" role="menuitem">Menu Four</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item order" role="menuitem">
+                            <a class="nav-link" role="menuitem">Order</a>
+                            <ul class="orderList">
+                                <li><a class="" href="MyOrder.htm" role="menuitem">My Orders</a></li>
+                                <li><a class="" href="TrackOrder.htm" role="menuitem">Track Orders</a></li>
+                                <li><a class="" href="returnOrder.htm" role="menuitem">Return Orders</a></li>
+                            </ul>
+                        </li>
+                       
+                        <li class="nav-item" role="menuitem">
+                            <a class="nav-link " href="myProfile.htm">Profile</a>
+                        </li>
+                        <a class="border-0 me-3" href="wishList.htm">
+                            <img src="img\Group 2579.png" alt="" width="50"><span class="badge text-bg-secondary wishCount"></span>
+                        </a>
+                        
+                        <a class="border-0 me-3" href="myCart.htm">
+                            <img src="img\Group 2581.png" alt="" width="50"><span class="badge text-bg-secondary cartCount"></span>
+                        </a>
+                    </ul>
+
+                    
+                    <!-- when clicked on button modal page of Login and Create Account -->
+                    <button type="button" class="btn px-3" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        SIGN IN
+                    </button>
+
+
+                </div>
+            </div>
+        </nav>
+
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button class="btn btn-secondary active form-control" aria-pressed="true">
+                            Login
+                        </button>
+
+                        <button class="btn form-control" data-bs-target="#exampleModal1" data-bs-toggle="modal">
+                            Create Account
+                        </button>
+                    </div>
+                    <div class="modal-body">
+
+                        <!-- Login Page -->
+                        <form action="">
+                            <label for="Email">Email <span>*</span></label> <br>
+                            <input type="text" id="Email" name='Email' class="form-control" required>
+                            <label for="psw" aria-required="true">Password <span>*</span></label> <br>
+                            <input type="password" id="psw" class="form-control" name="psw" required><br>
+                            <input type="submit" value="Sign" class="form-control Sign"></input><br>
+
+                            <input type="button" class="form-control" id="Forgot" value="Forgot Password?">
+                        </form>
+
+
+
+                    </div>
+                    <div class="modal-footer">
+
+                        <!-- Login with Social Icons buttons  -->
+                        <h6>Or Login with</h6>
+                        <button type="button" class="btn btn-danger btn-sm">
+                            <i class="fa-brands fa-google-plus-g"></i> Google </button>
+
+                        <button type="button" class="btn btn-primary btn-sm"><i class="fa-brands fa-facebook"></i>
+                            Facebook</button>
+
+                        <button type="button" class="btn btn-info btn-sm">
+                            <i class="fa-brands fa-twitter"></i> Twitter</button>
+
+
+
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button class="btn form-control" data-bs-target="#exampleModal"
+                            data-bs-toggle="modal">Login</button>
+                        <button class="btn btn-secondary active form-control">Create Account</button>
+
+                    </div>
+                    <div class="modal-body">
+
+                        <!-- Create Account -->
+                        <form action="">
+                            <label for="username">Username </label>
+                            <input type="text" name="username" id="username" class="form-control"><br>
+                            <label for="Email">Email <span>*</span></label> <br>
+                            <input type="text" id="Email" name='Email' class="form-control" required><br>
+                            <label for="psw" aria-required="true">Password <span>*</span></label> <br>
+                            <input type="password" id="psw" class="form-control" name="psw" required><br>
+                            <input type="submit" value="Create Account" class="form-control Sign"></input><br>
+
+
+                        </form>
+
+
+
+                    </div>
+                    <div class="modal-footer">
+
+                        <!-- Login with Social Icons buttons  -->
+                        <h6>Or Login with</h6>
+                        <button type="button" class="btn btn-danger btn-sm">
+                            <i class="fa-brands fa-google-plus-g"></i> Google </button>
+
+                        <button type="button" class="btn btn-primary btn-sm"><i class="fa-brands fa-facebook"></i>
+                            Facebook</button>
+
+                        <button type="button" class="btn btn-info btn-sm">
+                            <i class="fa-brands fa-twitter"></i> Twitter</button>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="index.htm">Home</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Profile</li>
+                </ol>
+            </nav>
+        </div>
+    </div>
+    <main>
+
+        <section>
+            <div class="container">
+                <!-- row -->
+                <div class="row">
+                    <!-- first column -->
+                    <!-- Sidebar -->
+                    <div class="col-lg-4">
+                        <!-- my Account -->
+                        <div>
+                            <ul>
+                                <h4>My Account</h4>
+                                <img src="img\Image 162.png" alt="" class="rounded-circle" width="50">
+                                <p>Jay S Londhe <br>jay1341990@gmail.com</p>
+                            </ul>
+                        </div>
+
+
+                        <!-- order -->
+                        <br>
+                        <div>
+                            <ul>
+                                <h4>Order</h4>
+                                <li><a href="MyOrder.htm">My Order</a></li>
+                                <li><a href="TrackOrder.htm">Track Order</a></li>
+                                <li><a href="returnOrder.htm" role="button" aria-current="page">Returns Orders</a></li>
+                                <li><a href="#">Cancelled Orders</a></li>
+                            </ul>
+                        </div>
+
+                        <!-- ACCOUNT -->
+                        <br>
+                        <div>
+                            <ul>
+                                <h4>ACCOUNT</h4>
+                                <li class="bg-secondary active"><a href="myProfile.htm" role="button"
+                                        aria-current="page">Profile</a></li>
+                                <li><a href="#">Save Address</a></li>
+                                <li><a href="#">Save Cards</a></li>
+                                <li><a href="#">Change Password</a></li>
+                                <li><a href="wishList.htm">Wish List</a></li>
+                            </ul>
+                        </div>
+
+                        <!-- PAYMENTS -->
+                        <br>
+                        <div>
+                            <ul>
+                                <h4>PAYMENTS</h4>
+                                <li><a href="#">Phonepe</a></li>
+                                <li><a href="#">Gift Cards</a></li>
+                                <li><a href="#">Debit Cards</a></li>
+                                <li><a href="#">Credit Cards</a></li>
+
+                            </ul>
+                        </div>
+
+                    </div>
+
+
+                    <!-- second column -->
+
+                    <div class="col-lg-6">
+                        <!-- My Prifile Page -->
+                        <div>
+                            <h2>Edit</h2>
+                            <hr>
+                            <form action="">
+                                <label for="mobNo">Mobile Number</label>
+                                <input type="text" name="mobNo" id="mobNo" class="form-control mb-2"
+                                    placeholder="7020011909">
+
+                                <label for="fName">Full Name</label>
+                                <input type="text" name="fullName" id="fullName" class="form-control mb-2"
+                                    placeholder="JAY S LONDHE">
+
+
+                                <label for="eMail">Email</label>
+                                <input type="text" name="email" id="email" class="form-control mb-2"
+                                    placeholder="jay1341990@gmail.com" required>
+
+                                <input type="radio" name="male" id="male" value="">
+                                <Label for="male">MALE</Label>
+                                <input type="radio" name="female" id="female" value="">
+                                <Label for="female">FEMALE</Label>
+                                <br><br>
+
+
+                                <label for="dob">Birthday</label>
+                                <input type="date" name="dob" id="dob" class="form-control">
+                                <br>
+
+                                <label for="location">Location</label>
+                                <input type="text" name="location" id="location" class="form-control mb-3">
+
+                                <label for="mob1">Alternate Mobile Details</label>
+                                <input type="text" name="mob1" id="mob1" class="form-control mb-3"
+                                    placeholder="+91 | 8605196038">
+
+                                <label for="nickName">Nick name</label>
+                                <input type="text" name="nickName" id="nickName" class="form-control mb-3"
+                                    placeholder="Jay">
+
+                                <button class="COLOR form-control p-2">CHANGE PASSWORD</button>
+
+
+
+                            </form>
+
+                            <a href="myProfile.htm" id="saveChanges" class="text-decoration-none" ><button class="form-control mt-4 bgColor p-2 "> Save
+                                    Changes</button></a>
+
+
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- footer Starts -->
+    <br><br><br>
+    <footer>
+        <div class="container">
+            <div class="row text-center mx-3">
+                <div class="col-lg-3 col-md-6 card">
+                    <img class="card-img-top mx-auto" src="img\Image 34.png" alt="" width="" height="">
+                    <div class="card-body">
+                        <strong>100% SECURE PAYMENTS</strong>
+                        <p>
+                            Turpis Elefend Vitae Malesuada Magna Congue Damus id ullamCorper neque
+                        </p>
+                    </div>
+
+
+                </div>
+
+                <!-- second card -->
+                <div class="col-lg-3 col-md-6 card">
+                    <img class="card-img-top mx-auto" src="img\Image 35.png" alt="" width="" height="">
+                    <div class="card-body">
+                        <strong>TRUSTPAY</strong>
+                        <p>
+                            Turpis Elefend Vitae Malesuada Magna Congue Damus id ullamCorper neque
+                        </p>
+                    </div>
+
+
+                </div>
+                <!-- third card -->
+                <div class="col-lg-3 col-md-6 card">
+                    <img class="card-img-top mx-auto" src="img\Image 36.png" alt="" width="" height="">
+                    <div class="card-body">
+                        <strong>HELP CENTER</strong>
+                        <p>
+                            Turpis Elefend Vitae Malesuada Magna Congue Damus id ullamCorper neque
+                        </p>
+                    </div>
+
+
+                </div>
+                <!-- 4th card -->
+                <div class="col-lg-3 col-md-6 card">
+                    <img class="card-img-top mx-auto" src="img\Image 37.png" alt="" width="" height="">
+                    <div class="card-body">
+                        <strong>SHOP ON THE GO</strong>
+                        <p>
+                            Turpis Elefend Vitae Malesuada Magna Congue Damus id ullamCorper neque
+                        </p>
+                    </div>
+
+
+                </div>
+            </div>
+
+
+            <!-- Policy info Company Info... -->
+
+            <div class="row py-5 mx-2">
+
+                <div class="col-6 col-lg-2 col-md-4">
+                    <b>POLICY INFO</b>
+                    <p> Privacy Policy</p>
+                    <p>Terms Of Sale </p>
+                    <p>Terms Of Use</p>
+                    <p>Report Abuse & Takedown Policy</p>
+                </div>
+
+                <div class=" col-6 col-lg-2 col-md-4">
+                    <b>COMPANY</b>
+                    <p> About Us</p>
+                    <p>Core Values</p>
+                    <p>Career</p>
+                    <p>Blog</p>
+                    <p>Sitemaps</p>
+                </div>
+
+                <div class="col-6 col-lg-3 col-md-4">
+                    <b>SNAPDEAL BUSINESS</b>
+                    <p> Shopping App</p>
+                    <p>Adevertise On Snapdeal</p>
+                    <p>Media Enquiries</p>
+                    <p>Be an Affiliate</p>
+
+                </div>
+
+                <div class="col-6 col-lg-2 col-md">
+                    <b>NEED HELP?</b>
+                    <p> faqs</p>
+                    <p>Contact Us</p>
+                    <p>Online Shopping</p>
+
+
+
+                </div>
+                <div class="col-lg-3 col-md">
+
+                    <b>SUSCRIBE</b> <br>
+                    <form class="d-flex" role="search">
+                        <input type="search" placeholder="Your Email Address" aria-label="Your Email Address">
+                        <button> suscribe</button>
+                    </form>
+
+
+
+                    <p>Register Now to get updates on Promotion and Coupon. Or Download App</p>
+
+
+                </div>
+
+
+
+            </div>
+
+            <hr>
+            <div class="row">
+
+                <div class="col-lg-6 col-md-6">
+                    <b>PAYMENT</b>
+                    <div>
+                        <img src="img\Image 38.png" alt="">
+                        <img src="img\Image 39.png" alt="">
+                        <img src="img\Image 40.png" alt="">
+                        <img src="img\Image 41.png" alt="">
+                        <img src="img\Image 42.png" alt="">
+                        <img src="img\Image 43.png" alt="">
+                    </div>
+
+                </div>
+                <div class="col-lg-6 col-md-6">
+                    <div class="">
+                        <b>CONNECT</b>
+                        <div>
+                            <img src="img\Image 44.png" alt="">
+                            <img src="img\Image 45.png" alt="">
+                            <img src="img\Image 46.png" alt="">
+                            <img src="img\Image 47.png" alt="">
+                        </div>
+                    </div>
+
+
+                </div>
+
+            </div>
+        </div>
+    </footer>
+
+
+
+    <script>
+
+    </script>
+
+</body>
+
+</html>
